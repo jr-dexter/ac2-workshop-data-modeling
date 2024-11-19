@@ -145,13 +145,13 @@ nodes:
           - name: maintenance
             description: Undergoing routine maintenance or repairs.
             color: "#ffd27f"
-      # - name: role
-      #   kind: Dropdown
-      #   optional: true
-      #   choices:
-      #     - name: loopback
-      #     - name: uplink
-      #     - name: peer
+      - name: role
+        kind: Dropdown
+        optional: true
+        choices:
+          - name: loopback
+          - name: uplink
+          - name: peer
     relationships:
       - name: ip_addresses
         peer: IpamIPAddress
